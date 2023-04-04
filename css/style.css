@@ -1,0 +1,54 @@
+*, .container-fluid {
+    margin: 0;
+    padding: 0;
+    font: 18px/1.5 'Montserrat', sans-serif;
+    color: #333;
+}
+
+.row{
+    background-color: rgba(255, 255, 255, 1);
+    height: 80px;
+}
+
+.banner{
+    height: 100px;
+    background-color: #f6f6f6;
+}
+
+.booking_form{
+    width: 70%;
+    margin: 0px auto;   
+}
+
+form{
+    width: 100%;
+    margin: 0px auto;
+}
+
+.booking_for{
+    width: 100%;
+}
+
+.form-check{
+    width: 100%;
+}
+
+/* .name{
+    width: 60%;
+} */
+
+input{
+    margin:15px 0px;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid gray;
+}
+
+span{
+    margin: 15px 0px;
+}
+
+button{
+    width: 100px;
+}

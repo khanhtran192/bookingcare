@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Title</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="/css/style.css" />
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="container">
+				<header class="header">
+					<div class="row d-flex align-items-center mt-2">
+						<div class="col-2 logo">
+							<img src="/img/bookingcare-2020.svg" alt="" />
+						</div>
+						<div class="col-2 item">Chuyên khoa</div>
+						<div class="col-2 item">Cơ sở y tế</div>
+						<div class="col-2 item">Bác sĩ</div>
+						<div class="col-2 item">Gói khám</div>
+						<div class="col-2 support">Hỗ trợ</div>
+					</div>
+				</header>
+			</div>
+
+			<div class="banner mt-2 mb-2"></div>
+
+			<div class="container">
+				<div class="booking_form">
+					<form
+						id="booking_form"
+						method="post"
+						class="d-flex flex-column"
+						enctype="multipart/form-data"
+					>
+						<h3 style="text-align: center" class="mb-3 mt-2">ĐẶT LỊCH KHÁM</h3>
+						<div class="form-check">
+							<label class="form-check-label">
+								<input
+									type="radio"
+									class="form-check-input"
+									name="book_for"
+									id="for_user"
+									value="0"
+									checked
+								/>
+								Dat cho ban than
+							</label>
+							<label class="form-check-label ml-5">
+								<input
+									type="radio"
+									class="form-check-input"
+									name="book_for"
+									id="for_family"
+									value="1"
+								/>
+								Dat cho nguoi than
+							</label>
+						</div>
+						<input
+							type="text"
+							placeholder="Ho ten benh nhan (Bat buoc)"
+							class="name"
+							name="name"
+							id="name"
+						/>
+						<span
+							>Hãy ghi rõ Họ Và Tên, viết hoa những chữ cái đầu tiên, ví dụ:
+							Trần Duy Khánh</span
+						>
+						<div class="form-check">
+							<label class="form-check-label">
+								<input
+									type="radio"
+									class="form-check-input"
+									name="sex"
+									id="male"
+									value="NAM"
+								/>
+								Nam
+							</label>
+							<label class="form-check-label ml-5">
+								<input
+									type="radio"
+									class="form-check-input"
+									name="sex"
+									id="female"
+									value="NU"
+								/>
+								Nữ
+							</label>
+						</div>
+						<input
+							type="text"
+							placeholder="So dien thoai lien he (Bat buoc)"
+							class="phone"
+						/>
+						<input
+							type="date"
+							placeholder="Ngay thang nam sinh (Bat buoc)"
+							class="date_of_birth"
+							name="dob"
+						/>
+
+						<textarea
+							name="address"
+							id="address"
+							class="form-control"
+							rows="3"
+							required="required"
+							placeholder="Dia chi"
+						></textarea>
+
+						<h3 style="text-align: center" class="mb-1 mt-2">
+							HOẶC SỬ DỤNG CCCD/CMT
+						</h3>
+						<label for="idCard">
+							<input type="file" name="idCard" id="idCard" /> Mặt trước
+						</label>
+						<button
+							type="submit"
+							name="submit"
+							id="submit"
+							class="btn btn-primary mb-3"
+						>
+							Đăng ký
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"
+		></script>
+		<script src="/js/main.js"></script>
+	</body>
+</html>
